@@ -1,0 +1,14 @@
+1 npm init-y
+2 install nodemon express bcrypt,mongoose,jsonwebtoken
+3 creating index.js file and setting express app
+4 \\const express = require("express");
+const app = express();
+app.use(express.json());?//
+run the app
+5 create db.js connect the mongoose by const connection
+6 import connection in index.js and write asyn await in app.listen //await connection is trycatch block
+7 create registeration folder and inside that file user.routes.js
+8 in users.routes.js export connection and userRauter=express.Router()
+9 starts wrting all routes by userrouter("/"register)
+10 export userRauter and import it in index.js and app.use("/users",userRauter)
+11 creating model inside that create Schema by mognoose and UserModel and export it and import it in userRouter
